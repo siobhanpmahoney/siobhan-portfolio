@@ -14,7 +14,7 @@ const link = {
   marginRight: '0.75em',
   color: '#484545',
   fontSize: '13px',
-  alignText: "center",
+  textAlign: "center",
   textDecoration: "none"
 }
 

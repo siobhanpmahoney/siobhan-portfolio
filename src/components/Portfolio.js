@@ -1,6 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import captureScreenshot from './screenshots/capture-screenshot.jpg'
+import chatsterScreenshot from './screenshots/chatster-screenshot.jpg'
 
 class Portfolio extends React.Component {
   render() {
@@ -22,12 +23,36 @@ class Portfolio extends React.Component {
               <p>Job search resource and application tracker equipped with searchable listings and tools for organizing relevant notes and research, including a digital notepad, relevant press and news feeds, and in-app bookmarking tool.</p>
 
               <div class="links">
-                  <a href="https://capture-jobs.herokuapp.com/login" target="_blank">live app</a> |
-                  <a href="https://www.youtube.com/watch?v=LtX2sFyvuFA&t=1s">demo</a> |
-                  <a href="https://github.com/siobhanpmahoney/capture-app">code</a>
+                  <a href="https://capture-jobs.herokuapp.com/login" target="_blank" target="_blank">live app</a> |
+                  <a href="https://www.youtube.com/watch?v=LtX2sFyvuFA&t=1s" target="_blank">demo</a> |
+                  <a href="https://github.com/siobhanpmahoney/capture-app" target="_blank">code</a>
               </div>
 
 
+          </div>
+
+          </div>
+
+
+          <div className="chatsterContent">
+
+            <div className="descriptionOpp">
+                <span className="project-titleOpp">Chatster</span>
+
+              <p className="stack">Stack: Action Cable, Redis, React, React-Router, Redux, Thunk, CSS, JWT Auth, Ruby on Rails, PostgreSQL</p>
+
+              <p>Online chat application featuring real-time message delivery with search and filtering tools that optimize access to chats, message history, and friends.</p>
+
+              <div class="links">
+                  <a href="https://chatster-app.herokuapp.com/login" target="_blank">live app</a> |
+                  <a href="https://www.youtube.com/watch?v=EXL_lkLJs6M" target="_blank">demo</a> |
+                  <a href="https://github.com/siobhanpmahoney/chatster-app" target="_blank">code</a>
+              </div>
+
+
+          </div>
+          <div className="screenshotOpp">
+            <img src={chatsterScreenshot} class="proj-screenshots"></img>
           </div>
 
           </div>
