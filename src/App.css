@@ -110,10 +110,10 @@ body {
   position: relative;
   /* margin: 1.5em 0em; */
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  overflow: hidden;
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+  /* flex-basis: auto; */
+  /* overflow: hidden; */
 }
 
 body.landingPage {
@@ -122,7 +122,7 @@ body.landingPage {
 
 .landingPageContent {
   align-items: stretch;
-  align-content: center;
+  /* align-content: center; */
   alignment: center;
   text-align: center;
   flex-direction: column;
@@ -156,7 +156,6 @@ body.landingPage {
 }
 
 .screenshot {
-  flex-shrink: 1;
   justify-content: flex-start;
   /* width: 40%; */
   /* justify-content: flex-start;
@@ -165,15 +164,20 @@ body.landingPage {
 
 .screenshotOpp {
   justify-content: flex-end;
-  flex-shrink: 1;
+}
+
+.screenshot, .screenshotOpp {
+  flex: auto;
+  width: 50%;
 }
 
 img.proj-screenshots {
-  max-width: 550px;
-  min-width: 450px;
-  width: 48%;
+  /* max-width: 550px;
+  min-width: 450px; */
   margin: 1em;
-  flex-shrink: 1;
+  width: 100%;
+  /* flex: auto; */
+  /* flex-shrink: 1; */
 }
 
 .stack {
@@ -194,17 +198,19 @@ img.proj-screenshots {
   /* flex-direction: row; */
   flex-wrap: nowrap;
   margin: 1em;
-  flex-shrink: 1;
   justify-content: center;
+  /* flex: auto; */
 }
 
 .captureContent {
   padding: 1em;
 
+
 }
 
 .chatsterContent {
   padding: 80px 0 20px;
+
 }
 
 
@@ -242,19 +248,22 @@ img.proj-screenshots {
 
 .description {
   justify-content: flex-end;
+  width: 90%;
+  flex: auto;
 }
 
 .descriptionOpp {
   justify-content: flex-start;
+  flex: auto 1;
 }
 
 .description, .descriptionOpp {
-  flex-grow: 2;
-  flex-shrink: 1;
-  min-width: 550px;
+  /* flex-grow: 2;
+  flex-shrink: 1; */
+  /* min-width: 550px; */
   width: 48%;
-  margin: 1em;
-  padding: 1em;
+  margin: 1em 1.5em;
+  padding: 1em 1.5em;
   align-self: center;
 }
 
