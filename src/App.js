@@ -11,9 +11,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="navbar">
+
           <NavBar />
-        </div>
+
 
           <Route exact path="/" render={() => <LandingPage /> } />
 
