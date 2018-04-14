@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 class NavBar extends React.Component {
   render() {
     return (
-      <div className="navbar">
+      <div className="navbar" style={{color:"#484545"}}>
         <span className="navLink"><NavLink to="/" exact>
            Home
         </NavLink></span>

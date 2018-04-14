@@ -4,11 +4,13 @@ import { withRouter } from 'react-router-dom'
 class LandingPage extends React.Component {
   render() {
     return (
-      <div className="landingPage">
+    <div className="landingPage">
+      <div className="landingPageContent">
         <span className="myName">Siobhan Mahoney</span>
 
         <div className="myHeadline">Brooklyn-based Full Stack Web Developer</div>
       </div>
+    </div>
     )
   }
 }
