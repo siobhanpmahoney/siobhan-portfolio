@@ -175,15 +175,12 @@ img.proj-screenshots {
   /* max-width: 550px;
   min-width: 450px; */
   margin: 1em;
-  width: 100%;
+  width: 90%;
   /* flex: auto; */
   /* flex-shrink: 1; */
 }
 
-.stack {
-  font-style: italic;
-  font-size: 17px;
-}
+
 
 
 /* button {
@@ -213,7 +210,18 @@ img.proj-screenshots {
 
 }
 
+.project-title {
+  justify-content: flex-end;
+}
 
+.project-titleOpp {
+  justify-content: flex-start;
+}
+
+.stack {
+  font-style: italic;
+  font-size: 17px;
+}
 
 .links a {
   padding: 1em 1em 1em 1em;
@@ -227,14 +235,6 @@ img.proj-screenshots {
   padding: 1em;
   text-transform: uppercase;
 
-}
-
-.project-title {
-  justify-content: flex-end;
-}
-
-.project-titleOpp {
-  justify-content: flex-start;
 }
 
 
