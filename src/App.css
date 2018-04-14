@@ -57,7 +57,8 @@ a:visited {
 body {
   margin: 1em 0em -1em 0em;
   font-family: "Open Sans";
-  color: #343434;
+  /* color: #343434; */
+  color: #484545;
   background:	#f6f6f6;
   overflow: auto;
 }
@@ -78,6 +79,13 @@ body {
 
 .navLink {
   margin: 0 1.25em;
+  padding: 0.25em 0.75em;
+  color: #484545;
+}
+
+.section-header {
+  font-size: 24px;
+  margin: 0.25em 0.75em;
   padding: 0.25em 0.75em;
   color: #484545;
 }
@@ -137,6 +145,32 @@ body.landingPage {
   text-transform: uppercase;
   height: 100%;
 }
+
+.portfolio .content {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.captureContent {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: nowrap;
+}
+
+.captureVideo {
+  flex-grow: 4;
+  justify-content: flex-start;
+  margin: 0.5em;
+}
+
+.captureDescription {
+  flex-grow: 6;
+  justify-content: flex-end;
+  margin: 0.5em;
+}
+
+
 
 .footer {
   position: absolute;
