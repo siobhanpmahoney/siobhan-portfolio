@@ -5,11 +5,11 @@ class LandingPage extends React.Component {
   render() {
     return (
     <div className="landingPage">
-      <div className="landingPageContent">
+      <section className="landingPageContent">
         <span className="myName">Siobhan Mahoney</span>
 
         <div className="myHeadline">Brooklyn-based Full Stack Web Developer</div>
-      </div>
+      </section>
     </div>
     )
   }

@@ -2,6 +2,7 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import captureScreenshot from './screenshots/capture-screenshot.jpg'
 import chatsterScreenshot from './screenshots/chatster-screenshot.jpg'
+import newswireScreenshot from './screenshots/newswire-screenshot.jpg'
 
 class Portfolio extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Portfolio extends React.Component {
         <div className="portfolioHeader section-header">Portfolio</div>
 
         <div className="portfolio content">
-          <div className="captureContent">
+          <section className="captureContent">
             <div className="screenshot">
               <img src={captureScreenshot} class="proj-screenshots"></img>
             </div>
@@ -31,7 +32,7 @@ class Portfolio extends React.Component {
 
           </div>
 
-          </div>
+        </section>
 
 
           <div className="chatsterContent">
@@ -43,7 +44,7 @@ class Portfolio extends React.Component {
 
               <p>Online chat application featuring real-time message delivery with search and filtering tools that optimize access to chats, message history, and friends.</p>
 
-              <div class="links">
+              <div class="linksOpp" style={{color: "#4FC1CE"}}>
                   <a href="https://chatster-app.herokuapp.com/login" target="_blank">live app</a> |
                   <a href="https://www.youtube.com/watch?v=EXL_lkLJs6M" target="_blank">demo</a> |
                   <a href="https://github.com/siobhanpmahoney/chatster-app" target="_blank">code</a>
@@ -53,6 +54,31 @@ class Portfolio extends React.Component {
           </div>
           <div className="screenshotOpp">
             <img src={chatsterScreenshot} class="proj-screenshots"></img>
+          </div>
+
+          </div>
+
+
+
+          <div className="newswireContent">
+            <div className="screenshot">
+              <img src={newswireScreenshot} class="proj-screenshots"></img>
+            </div>
+
+            <div className="description">
+                <span className="project-title">NYTimes NewsWire</span>
+
+              <p className="stack">Stack: React, Isomorphic-Fetch, NYTimes API, CSS </p>
+
+              <p>Single Page Application featuring <i>New York Times</i> article feed with real-time updates, curated recommendations, and bookmarking tool.</p>
+
+              <div class="links">
+                  <a href="https://news-wire.herokuapp.com/" target="_blank" target="_blank">live app</a> |
+                  <a href="https://www.youtube.com/watch?v=14PjvsMuZkU&t=2s" target="_blank">demo</a> |
+                  <a href="https://github.com/siobhanpmahoney/newswire-app" target="_blank">code</a>
+              </div>
+
+
           </div>
 
           </div>
