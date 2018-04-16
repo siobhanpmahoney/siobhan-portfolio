@@ -20,6 +20,12 @@ class Blog extends React.Component {
     }))
   }
 
+    formattedDate = (date) => {
+      let theDate = new Date(date).toLocaleDateString()
+
+      return `${theDate}`
+    }
+
 
   render() {
     if (this.state.blogPosts === []) {
@@ -30,6 +36,23 @@ class Blog extends React.Component {
     return(
       <div className="blog">
         <div className="section-header">Blog Posts</div>
+
+        <section className="blog-posts">
+          {this.state.blogPosts.map((post) => {
+            return<div className="post">
+              <div className="blogPostImg">
+                <img className="blogPostImg" src={post.thumbnail} />
+              </div>
+              <div className="blogPostTitle"><a href={post.link} target="_blank">{post.title}</a></div>
+              <div className="blogPostDate">{this.formattedDate(post.pubDate)}</div>
+
+            <div className="blogPostTopic">
+              Topics: {post.categories.map((t) => t).join(", ")}
+            </div>
+
+            </div>
+          })}
+        </section>
       </div>
     )
   }

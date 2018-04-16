@@ -34,9 +34,7 @@ class NavBar extends React.Component {
            Blog
         </NavLink></span>
 
-      <span className="navLink"><NavLink to="/contact" exact style={link} activeStyle={{color:"#7fd1da", textDecoration:"underline"}}>
-             Contact
-          </NavLink></span>
+      
       </div>
     )
   }
