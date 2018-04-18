@@ -6,7 +6,7 @@ class LandingPage extends React.Component {
     return (
     <div className="landingPage">
       <section className="landingPageContent">
-        <span className="myName">Siobhan Mahoney</span>
+        <div className="myName">Siobhan Mahoney</div>
 
         <div className="myHeadline">Brooklyn-based Full Stack Web Developer</div>
       </section>

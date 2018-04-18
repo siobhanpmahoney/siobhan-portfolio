@@ -82,8 +82,11 @@ body {
   text-transform: uppercase;
   color: #484545;
   border-bottom: solid #ededed 1px;
-  position: sticky;
   height: 110%;
+  position: relative;
+  right: 0;
+  top: 0;
+  left: 0;
 }
 
 .navLink {
@@ -110,25 +113,33 @@ body {
   /* color: #f6f6f6; */
   color: white;
   display: flex;
+
+  /* background: linear-gradient(#F7F7F7b5, #F7F7F7b5), url(components/media/lake-george.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+
   /* justify-content: center; */
   /* height: 500px; */
   /* position: relative; */
 
-  min-height: 500px;
+  /* min-height: 500px; */
   margin: 0em;
   width: 100%;
   /* background: #fe8483; */
-  background: #7fd1da;
+  /* background: #7fd1da; */
   background-repeat: repeat-x;
   /* min-height: 450px;
   max-height: 750px; */
   position: relative;
   /* margin: 1.5em 0em; */
   flex-direction: column;
+  background: #ffffffb5;
   /* flex-grow: 1;
   flex-shrink: 1; */
   /* flex-basis: auto; */
   /* overflow: hidden; */
+
 }
 
 
@@ -140,6 +151,17 @@ body {
   flex-direction: column;
   padding: 2.25em;
   margin: 0em;
+  display: flex;
+  wrap: nowrap;
+/* clip-path: polygon(0 0, 70% 1%, 30% 100%, 0% 100%); */
+
+  justify-content: center;
+  background: linear-gradient(to right, #ff5f6d, #fe8483);
+  transform: skewY(-6deg);
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  width: 100%;
+
   /* flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto; */
@@ -150,6 +172,10 @@ body {
   padding: 1em;
   font-size: 40px;
   font-weight: 500;
+  display: flex;
+  wrap: nowrap;
+  align-self: stretch;
+transform: skewY(6deg);
 }
 
 .myHeadline {
@@ -158,6 +184,12 @@ body {
   padding: 1em 1em 5em 1em;
   text-transform: uppercase;
   height: 100%;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  transform: skewY(6deg);
+  /* align-self: stretch; */
+
 }
 
 
