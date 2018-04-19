@@ -132,38 +132,36 @@ body {
   margin: 0em;
   display: flex;
   wrap: nowrap;
-  /* justify-content: center; */
-  background: linear-gradient(to right, #ff5f6d, #fe8483);
-  transform: skew(-60deg);
+  background: linear-gradient(170deg, #7fd1da, #00A5B7);
+  /* transform: skew(-60deg); */
   text-rendering: optimizeLegibility;
 
 
 }
 
 .myName {
-  margin: 1.5em 1em 1em 1em;
-  padding: 1em;
-  font-size: 40px;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 0em 1em;
+  font-size: 36px;
   font-weight: 500;
-  /* display: flex; */
   wrap: nowrap;
-  /* align-self: center;
-  align-content: center;
-  justify-content: center; */
-transform: skew(60deg);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* transform: skew(60deg); */
 }
 
 .myHeadline {
-  font-size: 24px;
-  align-items: center;
-  margin: 1em;
-  padding: 1em 1em 1em 1em;
+  font-size: 28px;
+  /* align-items: center; */
+  margin: 1em 1em 2em 1em;
+  padding: 0em 1em 2em 1em;
   text-transform: uppercase;
   height: 100%;
   /* display: flex; */
   color: white;
-  justify-content: center;
-  transform: skew(60deg);
+  letter-spacing: 2px;
+  /* justify-content: center; */
+  /* transform: skew(60deg); */
 }
 
 
