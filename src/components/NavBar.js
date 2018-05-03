@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
+import Resume from './Resume.pdf'
 
 const link = {
   width: '100px',
@@ -26,6 +27,10 @@ class NavBar extends React.Component {
            Home
         </NavLink></span>
 
+      <span className="navLink"><a href={Resume} target="_blank" style={link}>
+             Resume
+        </a></span>
+
       <span className="navLink"><NavLink to="/portfolio" exact style={link} activeStyle={{color:"#7fd1da", textDecoration:"underline"}}>
            Portfolio
         </NavLink></span>
@@ -34,7 +39,7 @@ class NavBar extends React.Component {
            Blog
         </NavLink></span>
 
-      
+
       </div>
     )
   }
