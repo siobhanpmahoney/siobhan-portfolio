@@ -8,10 +8,10 @@ class LandingPage extends React.Component {
       <section className="landingPageContent">
         <div className="myName">Siobhan Mahoney</div>
 
-        <div className="myHeadline">Brooklyn-based Full Stack Web Developer</div>
+        <div className="myHeadline">Full Stack Web Developer</div>
       </section>
 
-    
+
     </div>
     )
   }
