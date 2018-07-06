@@ -16,35 +16,12 @@ background-colors:
 df */
 
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
-html, body {
-  height: 100%;
-   width: 100%;
-}
 
 a:link {
   /* color: #f26a6b; */
@@ -56,38 +33,53 @@ a:visited {
   color: #55bdca;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
 
 body {
   margin: 1em 0em -1em 0em;
   font-family: "Open Sans";
-  /* background: linear-gradient(#F7F7F7b5, #F7F7F7b5), url(media/subtle_white_feathers/subtle_white_feathers_@2X.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
   color: #484545;
-  background-color:	#f7f7f7;
-  overflow: auto;
 }
+
+.App {
+  position: absolute;
+  width: 100%;
+}
+
+html, body, .App {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 
 .navbar {
   /* background-image: linear-gradient(265deg, #fcb69f, #feada6);
   background-image: linear-gradient(275deg, #fdfbfb 0%, #f6f8fe 100%); */
   /* background-color: #f7f7f7; */
   /* background-color: #fe8483; */
-  text-align: center;
-  padding: 2em 1em 2em 1em;
+  /* ;
   margin: -0.95em;
-  background-color: #f7f7f7;
+    height: 110%; */
+
+  text-align: center;
+padding: 2em 1em 2em 1em;
+  background-color: white;
   font-size: 16px;
   font-weight: 520;
   text-transform: uppercase;
   color: #484545;
   border-bottom: solid #ededed 1px;
-  height: 110%;
+
+  z-index : 50;
+  width: 100%;
   position: relative;
-  z-index : 1;
-
-
+  vertical-align: baseline;
 }
 
 .navLink {
@@ -108,80 +100,49 @@ body {
 
 }
 
-.landingPage {
-  overflow: hidden;
-  color: white;
-  margin: 0em;
-  width: 100%;
-  /* height: 50%; */
-  justify-content: center;
-  position: relative;
-  z-index: -2;
-  flex-direction: column;
-  background: #ffffffb5;
 
+.landingPage {
+  height: 100%;
+  background-image: url('images/closed-computer-spiky-plant.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  display:flex;
+  wrap:nowrap;
+  align-items: center;
 }
 
-
 .landingPageContent {
-  /* align-items: stretch; */
-  alignment: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 2.25em;
-  margin: 0em;
+  height: 100%;
   display: flex;
-  wrap: nowrap;
-  background: linear-gradient(170deg, #7fd1da, #00A5B7);
-  /* transform: skew(-60deg); */
-  text-rendering: optimizeLegibility;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  width: 53%
+}
 
-
+.section-1, .section-2 {
+  width: 23%;
 }
 
 .myName {
-  margin: 1em 1em 1em 1em;
-  padding: 1em 1em 0em 1em;
+  margin: -5em 1em 0em 1em;
+  padding: 0em 1em 0em 1em;
+  align-self: center;
   font-size: 36px;
   font-weight: 500;
   wrap: nowrap;
   text-transform: uppercase;
   letter-spacing: 2px;
-  /* transform: skew(60deg); */
-}
+  align-self: center;
 
-.myHeadline {
-  font-size: 28px;
-  /* align-items: center; */
-  margin: 1em 1em 2em 1em;
-  padding: 0em 1em 2em 1em;
-  text-transform: uppercase;
-  height: 100%;
-  /* display: flex; */
-  color: white;
-  letter-spacing: 2px;
-  /* justify-content: center; */
   /* transform: skew(60deg); */
 }
 
 
-
-/* .portfolio .content {
-  display:flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  color: #484545;
-}
-
-
-
-.screenshot {
-  justify-content: flex-start;
-  /* width: 40%; */
-  /* justify-content: flex-start;
-  margin: 1em;
-} */
 
 .portfolio: {
   height: 100%;
@@ -388,20 +349,22 @@ img.blogPostImg {
 
 
 section.footer {
-  position: relative;
-  right: 0;
+  /* right: 0;
   bottom: 0;
   left: 0;
   padding: 1em;
   height: 80px;
   margin: -1em;
   z-index: 0;
+   */
   /* background-color: #e1e0d8; */
   /* background: #ededed; */
-  background-color: #f7f7f7;
+
+
+  /* background-color: #f7f7f7;
   width: 100%;
   text-align: center;
-  vertical-align: baseline;
+  vertical-align: baseline; */
 }
 
 .footer-content {

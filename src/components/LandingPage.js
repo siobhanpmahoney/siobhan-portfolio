@@ -10,6 +10,8 @@ class LandingPage extends React.Component {
 
         <div className="myHeadline">Brooklyn-based Full Stack Web Developer</div>
       </section>
+
+    
     </div>
     )
   }
