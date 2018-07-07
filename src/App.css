@@ -276,7 +276,7 @@ section.footer {
 }
 
 .description, .descriptionOpp {
-  flex-basis: 25%;
+  flex-basis: 24%;
   flex: 0 1 auto;
   justify-content: flex-start;
   align-content: flex-start;
@@ -293,13 +293,15 @@ section.footer {
 
 .screenshot, .screenshotOpp {
   flex: 1 0 auto;
-  flex-basis: 56%;
+  flex-basis: 60%;
   /* width: 100%; */
 }
 
 img.proj-screenshots {
   margin: 8px;
   width: 90%;
+  box-shadow: 0 14px 14px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
+
 }
 
 
@@ -318,13 +320,13 @@ img.proj-screenshots {
   /* flex-grow: 6; */
   text-transform: uppercase;
   padding: 3px 0;
-  font-size: 20px;
-  font-weight: 550;
+  font-size: 18px;
+  font-weight: 650;
 }
 
 .stack {
   font-style: italic;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .links a, .linksOpp a {
