@@ -10,7 +10,7 @@ class Portfolio extends React.Component {
       <div className="portfolio">
         <div className="portfolioHeader section-header">Portfolio</div>
 
-        <div className="portfolio content">
+        <div className="portfolio-content">
           <section className="captureContent">
             <div className="screenshot">
               <img src={captureScreenshot} class="proj-screenshots"></img>
@@ -44,7 +44,7 @@ class Portfolio extends React.Component {
 
               <p>Online chat application featuring real-time message delivery with search and filtering tools that optimize access to chats, message history, and friends.</p>
 
-              <div class="linksOpp" style={{color: "#4FC1CE"}}>
+              <div class="linksOpp" style={{color: "#555"}}>
                   <a href="https://chatster-app.herokuapp.com/login" target="_blank">live app</a> |
                   <a href="https://www.youtube.com/watch?v=EXL_lkLJs6M" target="_blank">demo</a> |
                   <a href="https://github.com/siobhanpmahoney/chatster-app" target="_blank">code</a>

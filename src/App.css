@@ -113,7 +113,7 @@ html, body, .App {
   font-size: 32px;
   margin: 16px 0px 4px 16px;
   padding: 16px 12px;
-  color: #4FC1CE;
+  color: #555;
   font-weight: 500;
   text-transform: uppercase;
   /* border-bottom: solid #ededed 1px; */
@@ -220,94 +220,111 @@ section.footer {
 .portfolio: {
   height: 100%;
   width: 100%;
-  padding: 16px;
-  margin: 16px;
+  padding: 4px;
+  margin: 4px;
 }
 
-.screenshotOpp {
-  justify-content: flex-end;
+.portfolio-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 }
-
-.screenshot, .screenshotOpp {
-  flex: auto;
-  width: 50%;
-}
-
-img.proj-screenshots {
-  /* max-width: 550px;
-  min-width: 450px; */
-  margin: 16px;
-  width: 90%;
-  /* flex: auto; */
-  /* flex-shrink: 1; */
-}
-
-
-
-
-/* button {
-  border-radius: 4px;
-  padding: 3px 6px;
-  margin: 0px 8px;
-  color: #f26a6b;
-} */
 
 .captureContent, .chatsterContent, .newswireContent {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: nowrap;
-  /* margin: 16px; */
+  flex-direction: row;
+  align-content: flex-start;
+  align-self: flex-start;
+  align-content: flex-start;
   justify-content: center;
+  flex: 1 0 auto;
+  width: 100%;
 
-  /* flex: auto; */
-}
 
-.captureContent {
-  padding: 32px;
-  margin: 0px 0px 16px 0px;
 }
 
 .captureContent, .newswireContent {
   background: #e1e7ec;
-  color: #f7f7f7;
-  /* margin: 16px 0px; */
-  padding: 60px;
+  color: #555;
+  padding: 60px 15px;
 }
 
 .chatsterContent {
   background: white;
+  padding: 60px 30px;
+}
+
+.descriptionOpp {
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 90%;
+  flex: auto;
+  color: #555;
+  margin: 16px 16px;
+  padding: 16px 8px;
+}
+
+.description {
+  justify-content: flex-start;
+  align-self: center;
+  flex: auto;
+  width: 80%;
+  color: #555;
+  padding: 0px 16px 0px 0px;
+}
+
+.description, .descriptionOpp {
+  flex-basis: 25%;
+  flex: 0 1 auto;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  font-size: 15px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
 }
 
 
 
-
-
-.chatsterContent, .newswireContent {
-  padding: 60px 40px;
-
+.screenshot, .screenshotOpp {
+  flex: 1 0 auto;
+  flex-basis: 56%;
+  /* width: 100%; */
 }
+
+img.proj-screenshots {
+  margin: 8px;
+  width: 90%;
+}
+
+
 
 .project-titleOpp {
-  justify-content: flex-end;
-  color: #4FC1CE;
+  align-content: flex-start;
+  color: #555;
 }
 
 .project-title {
-  justify-content: flex-start;
-  color: #BFECF1;
+  align-self: flex-start;
+  color: #555;
 }
 
 .project-title, .project-titleOpp {
   /* flex-grow: 6; */
   text-transform: uppercase;
-  padding: 4px 0;
+  padding: 3px 0;
   font-size: 20px;
   font-weight: 550;
 }
 
 .stack {
   font-style: italic;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .links a, .linksOpp a {
@@ -317,7 +334,7 @@ img.proj-screenshots {
 }
 
 .linksOpp > a {
-  color: #4FC1CE
+  color: #555
 }
 
 .links, .linksOpp {
@@ -327,36 +344,13 @@ img.proj-screenshots {
 }
 
 .links a {
-  color: #BFECF1
+  color: #555
 }
 
 
 
 
-.descriptionOpp {
-  justify-content: flex-end;
-  width: 90%;
-  flex: auto;
-  color: #484545;
-}
 
-.description {
-  justify-content: flex-start;
-  flex: auto 1;
-  color: #f7f7f7;
-}
-
-.description, .descriptionOpp {
-  /* flex-grow: 2;
-  flex-shrink: 1; */
-  /* min-width: 550px; */
-  width: 48%;
-  margin: 16px 24px;
-  padding: 16px 24px;
-  align-self: center;
-  font-size: 16px;
-
-}
 
 
 
