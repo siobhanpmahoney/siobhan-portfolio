@@ -143,7 +143,7 @@ section.footer {
 
 .landingPage {
   /* min-height: 100%; */
-  background-image: url('images/closed-computer-spiky-plant.jpg');
+  background-image: url('images/closed-computer-spiky-plant-2.jpg');
   /* background-position: center; */
   background-position: center;
   background-repeat: no-repeat;
@@ -246,7 +246,7 @@ section.footer {
 }
 
 .captureContent, .newswireContent {
-  background: #e1e7ec;
+  background: #f3f5f7;
   color: #555;
   padding: 60px 15px;
 }
