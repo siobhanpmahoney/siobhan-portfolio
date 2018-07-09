@@ -18,6 +18,7 @@ class Portfolio extends React.Component {
     console.log(projectList)
     return (
       <div className="portfolio">
+        <div className="section-header">Projects</div>
         {projectList.map((proj, i) => {
           return <RenderedProject project = {proj} styleId={i+1} key={i} />
         })}
