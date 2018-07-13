@@ -37,7 +37,7 @@ export const projectList = [
     title: 'NYTimes NewsWire',
     screenshot: newswireScreenshot,
     stack: 'React, Isomorphic-Fetch, NYTimes API, CSS',
-    description: 'Single Page Application featuring <i>New York Times</i> article feed with real-time updates, curated recommendations, and bookmarking tool.',
+    description: 'Single Page Application featuring New York Times article feed with real-time updates, curated recommendations, and bookmarking tool.',
     siteLink: 'https://news-wire.herokuapp.com/',
     demoLink: 'https://www.youtube.com/watch?v=14PjvsMuZkU&t=2s',
     githubLink: 'https://github.com/siobhanpmahoney/newswire-app',

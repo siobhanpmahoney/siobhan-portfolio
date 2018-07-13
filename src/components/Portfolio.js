@@ -17,6 +17,7 @@ class Portfolio extends React.Component {
       dots: true,
       slidesToShow: 1,
       speed: 500,
+      arrows: false,
 fade: true,
 cssEase: 'linear'
 
