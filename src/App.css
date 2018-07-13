@@ -239,8 +239,8 @@ section.footer {
 
 .projectItem {
   position: relative;
-  padding: 1em;
-  margin: 1em;
+  padding: 2em;
+  margin: 2em;
   width: 100%;
   display: inline;
   flex-direction: column;
@@ -259,6 +259,8 @@ section.footer {
   position: relative;
   width: 100vw;
   align-content: stretch;
+  align-self: baseline;
+  justify-content: space-between;
 
 }
 
@@ -266,14 +268,18 @@ section.footer {
 
 
 img.proj-screenshots {
-display: inline;
+display: inline-flex;
   /* display: inline-flex; */
-  width: 50%;
-  padding: 1em;
+  width: 40%;
+  padding: 2em;
   flex: 1 0 auto;
+  margin: 2em;
+  align-self: baseline;
+  justify-content: baseline;
+  align-content: baseline;
+  text-align: baseline;
 
-  align-self: center;
-  text-align: center;
+
   /* align-content: center;
   align-self: stretch; */
 }
@@ -282,14 +288,17 @@ display: inline;
 
 
 .projOverview {
-  float: left;
   padding: 1em;
-  align-self: center;
-  display: inline;
+  align-self: baseline;
+  display: inline-flex;
   flex-direction: column;
   flex-wrap: nowrap;
   flex: 1 0 auto;
-  width: 30%;
+  width: 40%;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 
 
 }
