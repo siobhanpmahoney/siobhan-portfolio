@@ -271,9 +271,9 @@ img.proj-screenshots {
 display: inline-flex;
   /* display: inline-flex; */
   width: 40%;
-  padding: 2em;
+  padding: 0em 2em;
   flex: 1 0 auto;
-  margin: 2em;
+  margin: 0em 2.5em;
   align-self: baseline;
   justify-content: baseline;
   align-content: baseline;
@@ -288,13 +288,14 @@ display: inline-flex;
 
 
 .projOverview {
-  padding: 1em;
+  padding: 0em 2em;
+  margin: 0em 2em;
   align-self: baseline;
   display: inline-flex;
   flex-direction: column;
   flex-wrap: nowrap;
   flex: 1 0 auto;
-  width: 40%;
+  width: 25%;
   align-self: center;
   justify-content: center;
   align-content: center;
