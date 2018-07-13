@@ -14,7 +14,13 @@ class Portfolio extends React.Component {
 
   render() {
     const settings = {
-  dots: true,
+      dots: true,
+      slidesToShow: 1,
+      speed: 500,
+fade: true,
+cssEase: 'linear'
+
+
 };
     return (
       <div className="portfolio">
