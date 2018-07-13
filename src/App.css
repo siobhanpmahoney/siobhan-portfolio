@@ -228,18 +228,37 @@ section.footer {
 
 .portfolio {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  align-content: stretch; */
+  flex: 1 0 auto;
+  padding: 1em;
 }
 
 .projectItem {
   position: relative;
   padding: 1em;
+  margin: 1em;
   width: 100%;
+  display: inline;
+  flex-direction: column;
+  align-content: stretch;
+  flex: 1 0 auto;
 
+
+
+
+}
+
+.overview-and-pic {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100vw;
+  align-content: stretch;
 
 }
 
@@ -247,34 +266,44 @@ section.footer {
 
 
 img.proj-screenshots {
-  float: left;
-  display: inline-flex;
-  width: 50% !important;
+display: inline;
+  /* display: inline-flex; */
+  width: 50%;
   padding: 1em;
-  align-content: center;
-  align-self: stretch;
+  flex: 1 0 auto;
+
+  align-self: center;
+  text-align: center;
+  /* align-content: center;
+  align-self: stretch; */
 }
 
 
 
 
 .projOverview {
+  float: left;
   padding: 1em;
   align-self: center;
-  display: flex;
+  display: inline;
   flex-direction: column;
   flex-wrap: nowrap;
-  flex: 1 1 auto;
-  flex-basis: 30%;
+  flex: 1 0 auto;
+  width: 30%;
 
-  height: 100%;
 
 }
 
 .slick-list, .slick-track {
-  display: flex;
+  display: block;
+
+  height: 100%;
+  width: 100%;
+
 
 }
+
+
 
 
 /* .portfolio {

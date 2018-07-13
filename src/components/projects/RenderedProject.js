@@ -14,11 +14,10 @@ class RenderedProject extends React.Component {
     console.log(this.props.styleId)
     return (
       <div className={this.styleClass()}>
-
-        <img src={this.props.project.screenshot} class="proj-screenshots"></img>
-
+    <span className="project-title">{this.props.project.title}</span>
+    <div className="overview-and-pic">
       <div className="projOverview">
-        <span className="project-title">{this.props.project.title}</span>
+
 
         <div className="stack">Stack: {this.props.project.stack}</div>
 
@@ -27,6 +26,8 @@ class RenderedProject extends React.Component {
 
 
 
+          </div>
+          <img src={this.props.project.screenshot} class="proj-screenshots"></img>
           </div>
           <div class="links">
             <a href={this.props.project.siteLink} target="_blank" target="_blank">live app</a> |
