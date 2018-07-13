@@ -20,9 +20,9 @@ class RenderedProject extends React.Component {
             <div className="project-title">{this.props.project.title}</div>
 
 
-        <div className="stack">Stack: {this.props.project.stack}</div>
-
         <div className="description">{this.props.project.description}</div>
+
+        <div className="stack">Stack: {this.props.project.stack}</div>
 
 
           <div class="links">
@@ -32,7 +32,7 @@ class RenderedProject extends React.Component {
               </div>
 
           </div>
-  
+
           <img src={this.props.project.screenshot} class="proj-screenshots"></img>
 
           </div>

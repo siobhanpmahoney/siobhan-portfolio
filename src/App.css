@@ -55,12 +55,13 @@ body {
 html, body {
   height: 100%;
   overflow-x: hidden;
-  font-size:100%;
+
 }
 
 .App {
   position: relative;
   width: 100%;
+    font-size:100%;
 
 }
 
@@ -319,11 +320,14 @@ display: inline-flex;
 }
 
 .stack {
-  font-size: 15px;
+  font-size: 14px;
+  font-style: italic;
+  padding: 0.2rem 0rem;
 }
 
 .description {
   font-size: 14px;
+  padding: 0.2rem 0rem;
   margin: 0.5em 0em;
 }
 
@@ -333,8 +337,11 @@ display: inline-flex;
   height: 100%;
   width: 100%;
   font-size: 100%;
+}
 
-
+.links {
+    padding: 0.2rem 0rem;
+    text-align: center;
 }
 
 
