@@ -14,25 +14,25 @@ class RenderedProject extends React.Component {
     console.log(this.props.styleId)
     return (
       <div className={this.styleClass()}>
-      <div className="screenshot">
-        <img src={this.props.project.screenshot} class="proj-screenshots"></img>
-      </div>
 
-      <div className="description">
+        <img src={this.props.project.screenshot} class="proj-screenshots"></img>
+
+      <div className="projOverview">
         <span className="project-title">{this.props.project.title}</span>
 
-        <p className="stack">Stack: {this.props.project.stack}</p>
+        <div className="stack">Stack: {this.props.project.stack}</div>
 
-        <p>{this.props.project.description}</p>
+        <div className="description">{this.props.project.description}</div>
 
-        <div class="links">
-          <a href={this.props.project.siteLink} target="_blank" target="_blank">live app</a> |
-            <a href={this.props.project.demoLink} target="_blank">demo</a> |
-              <a href={this.props.project.githubLink} target="_blank">code</a>
-            </div>
+
 
 
           </div>
+          <div class="links">
+            <a href={this.props.project.siteLink} target="_blank" target="_blank">live app</a> |
+              <a href={this.props.project.demoLink} target="_blank">demo</a> |
+                <a href={this.props.project.githubLink} target="_blank">code</a>
+              </div>
 
           </div>
     )
