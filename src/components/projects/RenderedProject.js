@@ -33,7 +33,7 @@ class RenderedProject extends React.Component {
 
           </div>
 
-          <img src={this.props.project.screenshot} class="proj-screenshots"></img>
+          <img src={this.props.project.screenshot} id={this.props.project.cssid} class="proj-screenshots"></img>
 
           </div>
 

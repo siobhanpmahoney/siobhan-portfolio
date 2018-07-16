@@ -9,6 +9,7 @@ export const projectList = [
   {
     title: "Draft.js Demo",
     screenshot: draftjsScreenshot,
+    cssid: 'draftjsScreenshot',
     stack: "Draft.js, React, Redux, Thunk, CSS, Ruby on Rails, PostgreSQL",
     description: "Demo of WYSIWYG rich text editor built using Draft.js framework",
     siteLink: "https://draftjs-demo.herokuapp.com/login",
@@ -18,6 +19,7 @@ export const projectList = [
   {
     title: "Capture",
     screenshot: captureScreenshot,
+    cssid: 'captureScreenshot',
     stack: "React, React-Router, Redux, Thunk, CSS, JWT Auth, Ruby on Rails, PostgreSQL",
     description: "Job search resource and application tracker equipped with searchable listings and tools for organizing relevant notes and research, including a digital notepad, relevant press and news feeds, and in-app bookmarking tool.",
     siteLink: "https://capture-jobs.herokuapp.com/login",
@@ -27,6 +29,7 @@ export const projectList = [
   {
     title: "Chatster",
     screenshot: chatsterScreenshot,
+    cssid: 'chatsterScreenshot',
     stack: 'Action Cable, Redis, React, React-Router, Redux, Thunk, CSS, JWT Auth, Ruby on Rails, PostgreSQL',
     description: 'Online chat application featuring real-time message delivery with search and filtering tools that optimize access to chats, message history, and friends',
     siteLink: 'https://chatster-app.herokuapp.com/login',
@@ -36,6 +39,7 @@ export const projectList = [
   {
     title: 'NYTimes NewsWire',
     screenshot: newswireScreenshot,
+    cssid: 'newswireScreenshot',
     stack: 'React, Isomorphic-Fetch, NYTimes API, CSS',
     description: 'Single Page Application featuring New York Times article feed with real-time updates, curated recommendations, and bookmarking tool.',
     siteLink: 'https://news-wire.herokuapp.com/',

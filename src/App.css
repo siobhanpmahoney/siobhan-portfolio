@@ -294,8 +294,17 @@ display: inline-flex;
   box-shadow: 0 4px 4px rgba(0,0,0,0.10), 0 4px 4px rgba(0,0,0,0.10);
   box-sizing: border-box;
   border-radius: 8px;
+
   /* align-content: center;
   align-self: stretch; */
+}
+
+#chatsterScreenshot, #draftjsScreenshot {
+  filter: brightness(100%) contrast(110%) saturate(180%);
+}
+
+#newswireScreenshot, #captureScreenshot {
+    filter: brightness(100%) saturate(200%);
 }
 
 
@@ -322,14 +331,15 @@ display: inline-flex;
 }
 
 .stack {
-  font-size: 15px;
+  font-size: 90%;
   font-style: italic;
-  padding: 0.35rem 0rem;
+  padding: 0.45rem 0rem;
+    margin: 0.5em 0em;
 }
 
 .description {
-  font-size: 15px;
-  padding: 0.35rem 0rem;
+  font-size: 90%;
+  padding: 0.45rem 0rem;
   margin: 0.5em 0em;
 }
 
