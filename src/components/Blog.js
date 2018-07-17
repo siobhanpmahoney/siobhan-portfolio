@@ -13,7 +13,7 @@ class Blog extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fmedium.com%2Ffeed%2F%40siobhanpmahoney%2F")
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40siobhanpmahoney&api_key=fgfu47vqlvoulntzy01nfyvkyvms4vzvit2lgolw&order_by=pubDate&order_dir=desc&count=20")
     .then(response => response.json())
     .then(json => this.setState({
       blogPosts: json.items
@@ -39,18 +39,40 @@ class Blog extends React.Component {
 
         <section className="blog-posts">
           {this.state.blogPosts.map((post) => {
-            return<div className="post">
-              <div className="blogPostImg">
-                <img className="blogPostImg" src={post.thumbnail} />
+            if(post.title.length > 1) {
+            return <div className="postWrapper">
+              <div className="blog">
+              <div className="blogPostImgWrapper">
+                <div className="blogPostImg" style={{backgroundImage: `url(${post.thumbnail})`}} />
               </div>
-              <div className="blogPostTitle"><a href={post.link} target="_blank">{post.title}</a></div>
-              <div className="blogPostDate">{this.formattedDate(post.pubDate)}</div>
 
-            <div className="blogPostTopic">
-              Topics: {post.categories.map((t) => t).join(", ")}
+              <div className="blogTextWrapper">
+
+                <div className="blogText">
+
+                  <div className="blogPostDate">
+                    {this.formattedDate(post.pubDate)}
+                  </div>
+
+              <div className="blogPostTitle">
+                <a href={post.link} target="_blank">{post.title}</a>
+              </div>
+
+              <div className="blogPostTopic">
+                Topics: {post.categories.map((t) => t).join(", ")}
+              </div>
+
+
+
+
+
+          </div>
+
             </div>
 
+          </div>
             </div>
+          }
           })}
         </section>
       </div>
