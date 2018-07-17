@@ -32,7 +32,7 @@ class Blog extends React.Component {
       return <div>Loading..</div>
     }
     console.log(this.state.blogPosts)
-    debugger
+
     return(
       <div className="blog">
         <div className="section-header">Blog Posts</div>
